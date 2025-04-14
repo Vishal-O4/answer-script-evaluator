@@ -16,7 +16,7 @@ st.title("✅ True/False Answer Evaluation System")
 # === Load model ===
 @st.cache_resource
 def load_tf_model():
-    return load_model(r"D:\College\Final Year Project Phase 2\Final Website\true_or_false_model.h5")
+    return load_model(r"models/true_or_false_model.h5")
 
 model = load_tf_model()
 label_map = {0: "False", 1: "True"}
